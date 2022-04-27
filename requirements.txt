@@ -1,5 +1,5 @@
-torch==1.4.0
-torchvision
+torch==1.11.0+cpu
+torchvision==0.12.0+cpu
 absl-py==1.0.0
 altair==4.2.0
 antlr4-python3-runtime==4.8
