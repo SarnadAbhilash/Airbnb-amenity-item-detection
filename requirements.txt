@@ -1,5 +1,4 @@
---find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.7.1+cpu
+torch==1.4.0
 torchvision
 absl-py==1.0.0
 altair==4.2.0
