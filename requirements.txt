@@ -120,4 +120,3 @@ tinycss2==1.1.1
 toml==0.10.2
 toolz==0.11.2
 torchvision
-torch
