@@ -1,6 +1,6 @@
 av==9.2.0
 black==21.4b2
-#caffe2==0.8.1
+caffe2==0.8.1
 cityscapesscripts==2.2.0
 cloudpickle==2.0.0
 docutils==0.18.1
