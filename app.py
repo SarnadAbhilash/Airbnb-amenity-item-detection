@@ -158,12 +158,6 @@ def main():
           st.write("Amenities detected:")
           st.write([subset[i] for i in classes])
         
-    # st.write("## How is this made?")
-    # st.write("The machine learning happens with a fine-tuned [Detectron2](https://detectron2.readthedocs.io/) model (PyTorch), \
-    # this front end (what you're reading) is built with [Streamlit](https://www.streamlit.io/) \
-    # and it's all hosted on [Google's App Engine](https://cloud.google.com/appengine/).")
-    # st.write("See the [code on GitHub](https://github.com/mrdbourke/airbnb-object-detection) and a [YouTube playlist](https://www.youtube.com/playlist?list=PL6vjgQ2-qJFeMrZ0sBjmnUBZNX9xaqKuM) detailing more below.")
-    # st.video("https://youtu.be/C_lIenSJb3c")
 
 if __name__ == "__main__":
     main()
