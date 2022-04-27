@@ -3,7 +3,6 @@ import numpy as np
 import json
 import random
 import cv2
-import torch
 from PIL import Image
 
 # Detectron2 imports
@@ -61,7 +60,7 @@ def create_predictor(model_config, model_weights, threshold):
     """
     cfg = get_cfg()
     cfg.merge_from_file(model_config)
-    cfg.MODEL.DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+    cfg.MODEL.DEVICE = "cpu"
     #st.write(f"Making prediction using: {cfg.MODEL.DEVICE}")
     cfg.MODEL.WEIGHTS = model_weights
     cfg.MODEL.SCORE_THRESH_TEST = threshold
