@@ -38,7 +38,7 @@ Execute the following command to run the demo app locally:
 ```
 streamlit run app.py --server.port=8080 --server.address=0.0.0.0
 ```
-which starts our Streamlit app and serves it so that it is avaiable to access from the browser.
+which starts the Streamlit app and serves it so that it is avaiable to access from the browser.
 
 ### 2) Deploy the app on Google App Engine
 - Run streamlit app locally `streamlit run app.py`
@@ -63,7 +63,8 @@ which starts our Streamlit app and serves it so that it is avaiable to access fr
  ## Model prediction and evaluation
  ![](images/example-amenity-detection.png)
  ![](images/evaluation.png)
-So, our model achieved a mean average precision(mAP) of 46-48%
+ 
+  So, the model achieved a mean average precision(mAP) of 46-48%
 
 ## Acknowledgement
 1) [Airbnb amenity detection using computer vision](https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e)
