@@ -26,8 +26,11 @@ This project aims to
     ├── preprocess.py                              <- script to preprocess data
     ├── model.py                                   <- script to train model and predict
 ├── .gcloudignore                                  <- gcloud ignore file
-├── app.py                                         <- streamlit web app
+├── .gitattributes                                 <- git attributes file
+├── Dockerfile                                    <- Docker file
 ├── README.md                                      <- description of project and how to set up and run it
+├── app.py                                         <- streamlit web app
+├── app.yaml                                       <- config yaml file
 ├── requirements.txt                               <- requirements file to document dependencies
 ├── .gitignore                                     <- git ignore file
 ```
