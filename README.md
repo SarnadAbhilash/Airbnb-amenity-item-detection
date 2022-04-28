@@ -29,7 +29,7 @@ This project aims to
 ├── app.py                                         <- streamlit web app
 ├── README.md                                      <- description of project and how to set up and run it
 ├── requirements.txt                               <- requirements file to document dependencies
-├── .gitignore              <- git ignore file
+├── .gitignore                                     <- git ignore file
 ```
 ## How to use this repo
 ### 1) Run the app locally
