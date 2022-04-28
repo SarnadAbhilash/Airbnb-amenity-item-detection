@@ -11,6 +11,8 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog
 
+
+
 # Classes of amenities Airbnb mostly cares about
 subset = ['Toilet',
          'Swimming pool',
@@ -78,17 +80,6 @@ def make_inference(image, model_config, model_weights, threshold=0.5, n=5, save=
   Makes inference on image (single image) using model_config, model_weights and threshold.
 
   Returns image with n instance predictions drawn on.
-
-  Params:
-  -------
-  image (str) : file path to target image
-  model_config (str) : file path to model config in .yaml format
-  model_weights (str) : file path to model weights 
-  threshold (float) : confidence threshold for model prediction, default 0.5
-  n (int) : number of prediction instances to draw on, default 5
-    Note: some images may not have 5 instances to draw on depending on threshold,
-    n=5 means the top 5 instances above the threshold will be drawn on.
-  save (bool) : if True will save image with predicted instances to file, default False
   """
   # Create predictor and model config
   cfg, predictor = create_predictor(model_config, model_weights, threshold)
@@ -113,6 +104,10 @@ def make_inference(image, model_config, model_weights, threshold=0.5, n=5, save=
   return vis.get_image(), instances[:n]
 
 def main():
+    
+    image = Image.open('images/airbnb_logo_detail.png')
+
+    st.image(image)
     st.title("Airbnb Amenity Detection 👁")
     st.write("This application replicates [Airbnb's machine learning powered amenity detection](https://medium.com/airbnb-engineering/amenity-detection-and-beyond-new-frontiers-of-computer-vision-at-airbnb-144a4441b72e).")
     st.write("## How does it work?")
@@ -137,11 +132,6 @@ def main():
         # Make sure image is RGB
         image = image.convert("RGB")
 
-        # TODO: Fix image size if the instance is breaking
-        # If image is over certain size
-        # Resize image to certain size
-        # Don't make the image too small 
-        #st.write(image.size)
         
         if st.button("Make a prediction"):
           # TODO: Add progress/spinning wheel here
